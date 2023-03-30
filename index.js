@@ -3,11 +3,22 @@ let priceTwo = Number(document.getElementById("priceTwo").textContent);
 let priceThree = Number(document.getElementById("priceThree").textContent);
 let priceFour = Number(document.getElementById("priceFour").textContent);
 
-let total = priceOne + priceTwo + priceThree + priceFour;
-
-document.getElementById("totalPrice").textContent = total;
+document.getElementById("totalPrice").textContent =
+  priceOne + priceTwo + priceThree + priceFour;
 
 function getDiscount() {
-  var discountPrice = total - total * 0.2;
-  document.getElementById("totalPrice").textContent = discountPrice;
+  var discountPriceOne = priceOne - priceOne * 0.2;
+  document.getElementById("priceOne").textContent = discountPriceOne;
+  var discountPriceTwo = priceTwo - priceTwo * 0.2;
+  document.getElementById("priceTwo").textContent = discountPriceTwo;
+  var discountPriceThree = priceThree - priceThree * 0.2;
+  document.getElementById("priceThree").textContent = discountPriceThree;
+  var discountPriceFour = priceFour - priceFour * 0.2;
+  document.getElementById("priceFour").textContent = discountPriceFour;
+
+  document.getElementById("totalPrice").textContent =
+    discountPriceOne +
+    discountPriceTwo +
+    discountPriceThree +
+    discountPriceFour;
 }

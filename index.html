@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/normalize.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <title>Корзина</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1 class="title">Корзина</h1>
+      <div class="container">
+        <div class="item">
+          <img class="item_picture" src="assets/gazelle.jpg" alt="gazelle" />
+          <div class="item_info">
+            <p class="item_info-name">Gazelle Bold Shoes</p>
+            <p class="item_info-color">Цвет: Core Black</p>
+            <p class="item_info-size">Размер: 6.5</p>
+            <p class="item_info-quantity">Количество: 1</p>
+          </div>
+          <div class="item_price" id="priceOne">160</div>
+          <p class="item_price price-currency">$</p>
+        </div>
+        <div class="item">
+          <img
+            class="item_picture"
+            src="assets/aeroreadyPants.jpg"
+            alt="pants"
+          />
+          <div class="item_info">
+            <p class="item_info-name">Aeroready Sereno Pants</p>
+            <p class="item_info-color">Цвет: Black</p>
+            <p class="item_info-size">Размер: M</p>
+            <p class="item_info-quantity">Количество: 1</p>
+          </div>
+          <div class="item_price" id="priceTwo">80</div>
+          <p class="item_price price-currency">$</p>
+        </div>
+        <div class="item">
+          <img
+            class="item_picture"
+            src="assets/primeblueJacket.jpg"
+            alt="jacket"
+          />
+          <div class="item_info">
+            <p class="item_info-name">Primeblue SST Track Jacket</p>
+            <p class="item_info-color">Цвет: Black</p>
+            <p class="item_info-size">Размер: S</p>
+            <p class="item_info-quantity">Количество: 1</p>
+          </div>
+          <div class="item_price" id="priceThree">65</div>
+          <p class="item_price price-currency">$</p>
+        </div>
+        <div class="item">
+          <img class="item_picture" src="assets/adicolorBag.jpg" alt="bag" />
+          <div class="item_info">
+            <p class="item_info-name">Adicolor Classic Bag</p>
+            <p class="item_info-color">Цвет: Black</p>
+            <p class="item_info-size"></p>
+            <p class="item_info-quantity">Количество: 1</p>
+          </div>
+          <div class="item_price" id="priceFour">35</div>
+          <p class="item_price price-currency">$</p>
+        </div>
+        <div class="item item-total">
+          <div class="item_cupon">
+            <button class="button-discount" onclick="getDiscount();">
+              Использовать купон на 20%
+            </button>
+          </div>
+          <div class="item_price total-price">
+            <p class="total-price_text">Итого:</p>
+            <p class="total-price_sum" id="totalPrice">Цена</p>
+            <p class="total-price_sum">$</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+.title, .item_info-color, .item_info-size, .item_info-quantity, .item_price, .item_cupon {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.item_info-color, .item_info-size, .item_info-quantity, .item_price{
+    font-size: 0.8rem;
+    color: grey;
+}
+.container, .item {
+    border: 1px solid black;
+}
+.title{
+    margin-left: 18rem;
+}
+.item_info-name{
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    margin-left: 18rem;
+    margin-right: 18rem;
+}
+.item{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.item_picture{
+   width: 135px;
+}
+.item_info{
+    margin-left: 2rem;
+}
+.item_price{
+    margin-left: auto;
+    margin-right: 2rem;
+    display: flex;
+    align-self: center;
+}
+.price-currency{
+    margin-left: -1.5rem;
+}
+.item_cupon{
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+}
+.button-discount{
+    background-color: black;
+    color: azure;
+    width: 20rem;
+    height: 4rem;
+}
+.total-price{
+    flex-direction: row;
+    font-size: 1rem;
+    margin-right: 2rem;
+}
+.total-price_text{
+    color: black;
+    margin-right: 0.5rem;
+}
+.total-price_sum{
+    margin-right: 0.5rem;
+}
